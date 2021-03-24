@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navigation */
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #E6E6E6;
+}
+.navbar img{
+  height: 100px;
+  width: 100px;
+}
+
+.navbar ul, li{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+.navbar a{
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: #FF7F27;
+  border-bottom: 2px solid #FF7F27;
+  padding: 2px;
+}
+
+#burger-menu{
+  display: none;
+}
+
+/* Home */
+.home{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  background-image: url('./Components/img/banner.jpg');
+  background-position-x: center;
+    background-position-y: top;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    min-height: 100%;
+}
+.home h2{
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+.home p, .home h2{
+  letter-spacing: 10px;
+}
+.home button{
+  color: white;
+  background-color: #FF7F27;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 5px;
+}
+.home button:hover{
+  transition: 1s all ease-out;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+/* About */
+.about-us{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #E6E6E6;
+}
+.about-history h2{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+}
+.about-history p{
+  font-size: 13px;
+  width: 400px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.paragraphs p{
+  display: flex;
+  flex-flow: row wrap;
+  width: 500px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #686868;
+  font-style: italic;
+}
+
+/* Images */
+.images{
+  margin-left: 50px;
+}
+.about-main{
+  border-radius: 50%;
+  border: 5px solid #FF7F27;
+}
+.about-inset{
+  border-radius: 50%;
+  border: 5px solid #FF7F27;
+  position: relative;
+  right: 111px;
+}
+
+/* Today's Special */
+.todays-special{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.todays-special h2{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+}
+.todays-special p{
+  font-size: 20px;
+  text-align: center;
+  width: 800px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.special-images{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.special-images img{
+  height: 435px;
+  width: 342px;
+  border: 5px solid #FF7F27;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Menu */
+
+
+/* Team */
+.team img{
+  width: 310px;
+  height: 240px;
+  border: 5px solid #FF7F27;
+}
+
+.team-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E6E6;
+}
+
+.our-team{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.tom-div, .ursula-div, .second-tom-div, .jack-div, .jonathan-div, .jenny-div, .gary-div, .danny-div, .kitchen-team-div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tom-sec-div, .ursula-sec-div, .second-tom-sec-div, .jack-sec-div, .jonathan-sec-div, .jenny-sec-div, .gary-sec-div, .danny-sec-div, .kitchen-sec-div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tom-div p, .second-tom-div p, .jonathan-div p, .gary-div p, .kitchen-team-div p{
+  width: 350px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.ursula-div p, .jack-div p, .jenny-div p, .danny-div p{
+  width: 350px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.join-team{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E6E6;
+}
+
+.join-team h3{
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.join-team button{
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FF7F27;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.join-team button:hover{
+  transition: 1s ease-in-out;
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+}
+
+/* Gallery */
+.gallery{
+  background-color: #E6E6E6;
+}
+.gallery h2{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+}
+.gallery p{
+  font-size: 13px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.head-elements{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.food-images{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.first-part-img, .second-part-img, .third-part-img, .fourth-part-img{
+  margin-bottom: 15px;
+}
+
+.photo-1, .photo-7{
+  height: 350px;
+  width: 730px;
+  border: 5px solid #FF7F27;
+  margin-right: 3px;
+}
+.photo-2, .photo-3, .photo-4, .photo-5, .photo-6, .photo-8, .photo-9, .photo-10{
+  height: 350px;
+  width: 360px;
+  border: 5px solid #FF7F27;
+  margin-right: 3px;
+}
+
+/* Blog */
+.blog{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-image: url(./Components/img/blog/blog-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  font-size: 14px;
+}
+.blog h2{
+  color: #FF7F27;
+  font-size: 42px;
+  margin-top: 3%;
+}
+.latest-recipes, .new-recruits, .baking-tips, .eggs{
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.first-blog, .second-blog, .third-blog, .fourth-blog{
+  background: white;
+  color: black;
+  width: 240px;
+  height: 77%;
+  text-align: center;
+  padding: 65px 1% 0px;
+  font-size: 24px;
+  margin-right: 25px;
+}
+.first-blog h4, .second-blog h4, .third-blog h4, .fourth-blog h4{
+  color: rgb(204, 204, 204);
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.first-blog p, .second-blog p, .third-blog p, .fourth-blog p{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.first-blog span, .second-blog span, .third-blog span, .fourth-blog span{
+  color: rgb(204, 204, 204);
+  font-size: 12px;
+}
+
+.first-line, .second-line{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn{
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FF7F27;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 72px;
+}
+
+.btn:hover{
+  transition: 1s ease-in-out;
+  background: transparent;
+  border: 2px solid white;
+}
