@@ -2,6 +2,7 @@ import latestRecipes from '../img/blog/latest-recipes.jpg'
 import newRecruits from '../img/blog/new-recruits .jpg'
 import bakingTips from '../img/blog/baking-tips.jpg'
 import eggs from '../img/blog/eggs.jpg'
+import { Link } from 'react-router-dom'
 
 const Blog = () => {
     return (
@@ -54,7 +55,7 @@ const Blog = () => {
                 </div>
             </div>
 
-            <button className="btn">View The Blog</button>
+            <Link to="/home" className="btn">View The Blog</Link>
         </div>
     );
 }

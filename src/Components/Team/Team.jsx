@@ -7,6 +7,7 @@ import jenny from '../img/team/jenny.jpg';
 import gary from '../img/team/Gary.jpg';
 import danny from '../img/team/danny.jpg';
 import kitchenTeam from '../img/team/kitchen team.jpeg';
+import { Link } from 'react-router-dom';
 
 const Team = () => {
     return (
@@ -143,7 +144,7 @@ const Team = () => {
                 <h3>
                     Would you like to join the team?
                 </h3>
-                <button className="careers-btn">Contact Us</button>
+                <Link to="/contact" className="careers-btn">Contact Us</Link>
             </div>
         </div>
     );

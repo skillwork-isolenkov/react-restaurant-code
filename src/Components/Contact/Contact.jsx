@@ -1,8 +1,24 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import lipsumTeams from '../img/lipsum-teams.png'
+import { useState } from 'react'
 
 const Contact = () => {
+    const [message, setMessage] = useState('');
+
+    const contactButton = () => {
+        let email = document.querySelector('.input-email');
+        let spanMsg = document.querySelector('.message');
+
+        if (email.value !== '') {
+            setMessage('Your e-mail has been submitted!');
+            spanMsg.style.color = "#08bd08";
+        } else {
+            setMessage('Please enter your e-mail!');
+            spanMsg.style.color = "red";
+        }
+        email.value = '';
+    }
     return (
         <div className="contact">
             <div className="contact-main">
@@ -11,9 +27,9 @@ const Contact = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <div className="email-bar">
                         <input className="input-email" type="email" required placeholder="Enter Your E-Mail ID" />
-                        <a href="/" className="orange-btn"><FontAwesomeIcon icon={faAngleDoubleRight} /></a>
+                        <a href onClick={contactButton} className="orange-btn"><FontAwesomeIcon icon={faAngleDoubleRight} /></a>
                     </div>
-                    <span className="message"></span>
+                    <span className="message">{message}</span>
                 </div>
             </div>
 

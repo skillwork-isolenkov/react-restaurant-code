@@ -1,3 +1,5 @@
+
+
 const Reservation = () => {
     return (
         <div className="reservation">
@@ -26,7 +28,6 @@ const Reservation = () => {
                 </div>
                 <button className="button">Book my table</button>
             </form>
-            <span className="message"></span>
         </div>
     );
 }
