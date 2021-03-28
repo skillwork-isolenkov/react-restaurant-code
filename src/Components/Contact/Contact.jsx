@@ -37,7 +37,7 @@ const Contact = () => {
             <div className="contact-footer">
                 <img src={lipsumTeams} alt="lipsumTeams" />
                 <div className="navbar-elements">
-                    <div className="about">
+                    <div className="about-contact">
                         <h3 className="orange">About Us</h3>
                         <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.</p>
                     </div>
@@ -50,7 +50,7 @@ const Contact = () => {
                         <li><a href="/">Club Sandwich </a></li>
                     </ul>
 
-                    <ul className="contact">
+                    <ul className="contact-us">
                         <h3 className="orange">Contact Us</h3>
                         <li><i className="fa fa-location-arrow"></i> 685 Eva Pearl Street Baton Rouge LA</li>
                         <li><i className="fa fa-mobile"></i>+359 87 6778588</li>
