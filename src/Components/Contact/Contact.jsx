@@ -6,7 +6,8 @@ import { useState } from 'react'
 const Contact = () => {
     const [message, setMessage] = useState('');
 
-    const contactButton = () => {
+    const contactButton = (e) => {
+        e.preventDefault();
         let email = document.querySelector('.input-email');
         let spanMsg = document.querySelector('.message');
 
@@ -27,7 +28,7 @@ const Contact = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <div className="email-bar">
                         <input className="input-email" type="email" required placeholder="Enter Your E-Mail ID" />
-                        <a href onClick={contactButton} className="orange-btn"><FontAwesomeIcon icon={faAngleDoubleRight} /></a>
+                        <a href="true" onClick={contactButton} className="orange-btn"><FontAwesomeIcon icon={faAngleDoubleRight} /></a>
                     </div>
                     <span className="message">{message}</span>
                 </div>

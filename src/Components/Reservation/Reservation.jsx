@@ -15,8 +15,8 @@ const Reservation = () => {
                 <div className="number-persons">
                     <input className="input-number" type="number" placeholder="Contact No." required
                         data-error="Contact Number is required." />
-                    <select id="persons" name="persons">
-                        <option value="" disabled selected>No. of Persons</option>
+                    <select defaultValue="default" id="persons" name="persons">
+                        <option value="default" disabled>No. of Persons</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

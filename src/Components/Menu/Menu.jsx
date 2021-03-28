@@ -20,28 +20,33 @@ import coffee from '../img/menu/coffee.jpg'
 import cocaCola from '../img/menu/coca-cola.jpg'
 
 const Menu = () => {
-    const starterButton = () => {
+
+    const starterButton = (e) => {
+        e.preventDefault();
         document.querySelector('.slider-starters').style.display = "flex";
         document.querySelector('.slider-main').style.display = "none";
         document.querySelector('.slider-drinks').style.display = "none";
         document.querySelector('.slider-deserts').style.display = "none";
     }
 
-    const mainButton = () => {
+    const mainButton = (e) => {
+        e.preventDefault();
         document.querySelector('.slider-starters').style.display = "none";
         document.querySelector('.slider-drinks').style.display = "none";
         document.querySelector('.slider-deserts').style.display = "none";
         document.querySelector('.slider-main').style.display = "flex";
     }
 
-    const desertButton = () => {
+    const desertButton = (e) => {
+        e.preventDefault();
         document.querySelector('.slider-starters').style.display = "none";
         document.querySelector('.slider-main').style.display = "none";
         document.querySelector('.slider-drinks').style.display = "none";
         document.querySelector('.slider-deserts').style.display = "flex";
     }
 
-    const drinksButton = () => {
+    const drinksButton = (e) => {
+        e.preventDefault();
         document.querySelector('.slider-starters').style.display = "none";
         document.querySelector('.slider-main').style.display = "none";
         document.querySelector('.slider-deserts').style.display = "none";
@@ -59,19 +64,19 @@ const Menu = () => {
                 <div className="slider-nav">
                     <ul>
                         <li className="starters">
-                            <a href onClick={starterButton} id="starters">Starters</a>
+                            <a href="true" onClick={starterButton} id="starters">Starters</a>
                             <img src={starters} alt="starters" />
                         </li>
                         <li className="main-dishes">
-                            <a href onClick={mainButton} id="main-dishes">Main Dishes</a>
+                            <a href="true" onClick={mainButton} id="main-dishes">Main Dishes</a>
                             <img src={mainDishes} alt="main-dishes" />
                         </li>
                         <li className="deserts">
-                            <a href onClick={desertButton} id="deserts">Deserts</a>
+                            <a href="true" onClick={desertButton} id="deserts">Deserts</a>
                             <img src={deserts} alt="deserts" />
                         </li>
                         <li className="drinks">
-                            <a href onClick={drinksButton} id="drinks">Drinks</a>
+                            <a href="true" onClick={drinksButton} id="drinks">Drinks</a>
                             <img src={drinks} alt="drinks" />
                         </li>
                     </ul>

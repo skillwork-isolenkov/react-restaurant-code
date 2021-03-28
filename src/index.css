@@ -699,3 +699,201 @@ code {
 .hours span{
   color: #666;
 }
+
+/* Responsive Design */
+@media only screen and (max-width: 900px) {
+   /* Navigation */
+   .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation{
+  width: 100%;
+}
+
+.navigation ul{
+    display: none;
+    background-color: #202020;
+    position: absolute;
+    top: 60px;
+    right: 1px;
+}
+.navigation li{
+    padding: 5px 0px;
+}
+.navigation li:hover{
+    border-bottom: 2px solid #FF7F27;
+    color: #FF7F27;
+}
+.navigation a{
+    color: white;
+}
+.navigation a:hover{
+    color: #FF7F27;
+}
+
+#burger-menu{
+    display: flex;
+    font-size: 45px;
+    color: black;
+}
+
+/* Home */
+.home{
+  text-align: center;
+  width: 100%;
+}
+
+.home h2{
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.home p{
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.home .btn{
+  padding: 17px;
+  font-size: 17px;
+}
+
+/* About */
+.about-history h2{
+  font-size: 35px;
+}
+.about-history p{
+  width: 300px;
+}
+
+.about-elements{
+  text-align: center;
+}
+
+.paragraphs{
+  font-size: 10px;
+}
+.paragraphs p{
+  width: 300px;
+  font-size: 13px;
+}
+
+.about-main{
+  margin-right: 30px;
+}
+.about-inset{
+  position: inherit;
+  margin-right: 30px;
+}
+.images img{
+  width: 120px;
+  height: 120px;
+}
+
+.todays-special h2{
+  font-size: 35px;
+}
+.todays-special p{
+  width: 300px;
+  font-size: 13px;
+}
+
+.special-images{
+  display: flex;
+  flex-flow: row wrap;
+}
+.special-images img{
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+}
+
+/* Menu */
+.menu{
+  height: auto;
+}
+.menu h2{
+  font-size: 35px;
+}
+.main-paragraph{
+  width: 300px;
+  font-size: 15px;
+}
+
+.slider-nav ul{
+  margin-left: 20px;
+}
+.slider-nav li{
+  margin: 0;
+}
+.slider-nav a{
+  font-size: 20px;
+}
+
+.first-row, .second-row{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.slider-starters h3, .slider-main h3, .slider-deserts h3, .slider-drinks h3{
+  font-size: 17px;
+}
+.slider-starters p, .slider-main p, .slider-deserts p, .slider-drinks p{
+  width: 150px;
+  font-size: 12px;
+}
+.slider-starters img, .slider-main img, .slider-deserts img, .slider-drinks img {
+  height: 75px;
+  width: 75px;
+}
+.slider-starters span, .slider-main span, .slider-deserts span, .slider-drinks span{
+  width: 65px;
+  font-size: 20px;
+}
+.first-dish, .second-dish, .third-dish, .fourth-dish{
+  margin-bottom: 20px;
+}
+.first-dish, .third-dish{
+  margin-right: 15px;
+}
+
+/* Team */
+.our-team{
+  font-size: 35px;
+}
+
+.team-div img{
+  height: 210px;
+  width: 300px;
+}
+
+.about-us-div{
+  margin-top: 30px;
+}
+
+.about-us-div p, .jack-div p{
+  width: 300px;
+  font-size: 13px;
+}
+
+.team-div img, .jack-div p{
+  margin-bottom: 50px;
+  margin-left: 40px;
+  font-size: 13px;
+}
+
+.tom-div p, .second-tom-div p, .jonathan-div p, .gary-div p{
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 300px;
+  font-size: 13px;
+}
+
+.ursula-div p, .jenny-div p, .danny-div p{
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+
+}

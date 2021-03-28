@@ -5,7 +5,7 @@ const Home = () => {
         <div className="home">
             <h2>Art of cooking</h2>
             <p>The best restaurant in town</p>
-            <Link to="/reservation" class="btn">Book my table</Link>
+            <Link to="/reservation" className="btn">Book my table</Link>
         </div>
     );
 }
