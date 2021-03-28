@@ -1036,5 +1036,52 @@ code {
   align-items: flex-start;
   margin-left: 15px;
 }
+}
+
+/* Landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  /* About Us */
+  .about-us{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.todays-special{
+    justify-content: flex-start;
+    margin-left: 65px;
+}
+
+/* Menu */
+.first-row, .second-row{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Blog */
+  .blog{
+      height: auto;
+  }
+
+/* Reservation */
+.name-email, .number-persons, .date-time{
+  display: flex;
+}
+
+.input-name, .input-number, .input-date{
+  margin-right: 20px;
+}
+
+.reservation button{
+  margin-left: 90px;
+}
+
+/* Contact Us */
+.contact-main{
+  height: 75vh;
+}
+
+.email-bar input {
+  margin-top: 40px;
+}
 
 }

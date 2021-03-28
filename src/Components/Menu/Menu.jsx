@@ -183,7 +183,7 @@ const Menu = () => {
                         <div className="first-dish">
                             <img src={fudgecake} alt="fudgecake" />
                             <div>
-                                <h3>Chocolate Fudgecake</h3>
+                                <h3>Fudgecake</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.
                             </p>
